@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700&display=swap"
+        rel="stylesheet"><!-- FONTE TITULO PRINCIPAL-->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FONTE CADASTRE SEU EMAIL-->
+
     <title>Formulario</title>
 </head>
-<body class="bg-[#FF3131]">
-    
+
+<body class="bg-[#FF3131] flex justify-center items-center min-h-screen">
+    <main class="w-full max-w-sm p-6 mt-24  justify-center ">
+
+        <!-- TITULO PRINCIPAL-->
+        <h1 class="text-white text-5xl font-['Red_Hat_Display'] text-center ">
+            Criar Conta
+        </h1>
+
+        <!-- CONTAINER REDE SOCIAL -->
+        <div class="REDE-SOCIAL display flex mt-6 justify-center gap-6">
+
+            <!-- FACEBOOK BACKGROUND-->
+            <div class="w-10 h-10 bg-[#F3F3F3] rounded-full flex justify-center items-center">
+                <div class="logo "><img src="img/Social icon.png" alt=""></div><!-- GMAIL IMG-->
+            </div>
+
+            <!-- GMAIL BACKGROUND-->
+            <div
+                class="w-10 h-10 bg-[#FF3131] rounded-full shadow-lg shadow-black/100 flex justify-center items-center">
+                <div class="logo "><img src="img/Group.png" alt=""></div><!-- GMAIL IMG-->
+            </div>
+
+            <!-- LINKEDIN BACKGROUND-->
+            <div class="w-10 h-10  bg-[#F3F3F3] rounded-full flex justify-center items-center">
+                <div class="logo "><img src="img/Vector.png" alt=""></div><!-- LINKEDIN IMG-->
+            </div>
+        </div>
+
+        <!-- cadastro de email-->
+        <span class="flex justify-center mt-6 text-white font-['Assistant'] text-sm"> ou cadastre seu email</span>
+
+        <!-- container nome, email e senha-->
+        <div class="flex flex-col justify-center mt-6 ">
+            <!-- TEXT-FIELD NOME-->
+            <input type="text" placeholder="Nome" class="w-full p-3 text-base bg-white">
+            <!-- TEXT-FIELD EMAIL-->
+            <input type="text" placeholder="Email" class="w-full p-3 text-base bg-white mt-3">
+            <!-- TEXT-FIELD SENHA-->
+            <input type="text" placeholder="Senha" class="w-full p-3 text-base bg-white mt-3">
+        </div>
+        <!--Botão cadastro-->
+        <button
+            class="w-[180px] mx-auto flex justify-center bg-[#FF3131] text-white p-3 border-2 border-white rounded-full mt-6">Cadastrar</button>
+        <!--JA TEM CONTA?-->
+        <span class=" flex justify-center mt-6 text-white font-['Assistant'] text-base"> Já tem conta? <strong>Login</strong></span>
+    </main>
 </body>
+
 </html>
